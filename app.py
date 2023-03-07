@@ -10,15 +10,15 @@ import string
 # Segundo: en la terminal correr streamlit run app.py
 
 # Gestionar path directorio de trabajo
-path = "/Users/jmlz_rp/Documents/SistemasIA/Taller4"
+#path = "/Users/jmlz_rp/Documents/SistemasIA/Taller4"
 
 st.title("Chatbot")
 st.markdown("## SIC")
 st.markdown("<h1 style='text-align: center;'>Taller 4</h>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center;'>José Miguel López, Julian David Pulgarin y Daniel Isaac Contreras</h4>", unsafe_allow_html=True)
 st.markdown("")
-image = Image.open('/Users/jmlz_rp/Documents/SistemasIA/Taller4/chatbot.png')
-image1 = Image.open('/Users/jmlz_rp/Documents/SistemasIA/Taller4/student.png')
+image = Image.open('chatbot.png')#'/Users/jmlz_rp/Documents/SistemasIA/Taller4/chatbot.png'
+image1 = Image.open('student.png')#'/Users/jmlz_rp/Documents/SistemasIA/Taller4/student.png'
 resized_image = image.resize((200, 200))
 resized_image1 = image1.resize((200, 200))
 
@@ -421,6 +421,6 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('/Users/jmlz_rp/Documents/SistemasIA/Taller4/drawing.png')  
+add_bg_from_local('drawing.PNG')  #/Users/jmlz_rp/Documents/SistemasIA/Taller4/drawing.png
 
 
